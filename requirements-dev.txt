@@ -6,7 +6,7 @@ pytest
 codecov
 pytest-cov
 pre-commit
-pytest-benchmark
+tox
 
 # Linting
 flake8
@@ -14,6 +14,7 @@ pylint
 mypy
 autopep8
 isort
+black
 
 # Documentation
 mkdocs

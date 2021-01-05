@@ -92,7 +92,6 @@ class Vector2D:
         Returns:
             bool: True, if the both vector instances have the same values. False, else.
         '''
-        self.check_vector_types(other_vector)
         is_equal = False
         if isinstance(other_vector, Vector2D):
             if self.x == other_vector.x and self.y == other_vector.y:

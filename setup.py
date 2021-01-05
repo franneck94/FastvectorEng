@@ -1,6 +1,4 @@
 # python setup.py develop
-from Cython.Build import cythonize
-from setuptools import Extension
 from setuptools import setup
 
 
@@ -35,25 +33,14 @@ INSTALL_REQUIRES = [
 
 PACKAGES = [
     'fastvector',
-    'tests',
-    'benchmarks'
+    'tests'
 ]
-
-CYTHON_EXTENSION = [
-    Extension(
-        name='fastvector.cython_computations',
-        sources=['fastvector/cython_computations.pyx']
-    )
-]
-
-EXT_MODULES = cythonize(CYTHON_EXTENSION)
 
 metadata = dict(
     name=DISTNAME,
     version=VERSION,
     long_description=README,
     packages=PACKAGES,
-    ext_modules=EXT_MODULES,
     python_requires=PYTHON_REQUIRES,
     install_requires=INSTALL_REQUIRES,
     author=AUTHOR,

@@ -20,4 +20,3 @@ test-coverage:
 
 test-coverage-html:
 	$(PYTHON) -m pytest --cov=$(SRC_CORE) $(SRC_TEST) --cov-report=html
-

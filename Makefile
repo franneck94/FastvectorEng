@@ -22,5 +22,3 @@ test-coverage:
 test-coverage-html:
 	$(PYTHON) -m pytest --cov=$(SRC_CORE) $(SRC_TEST) --cov-report=html
 
-benchmark:
-	$(PYTHON) -m py.test --benchmark-columns=min,max,mean,stddev --benchmark-sort=mean $(SRC_BENCH)

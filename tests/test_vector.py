@@ -23,7 +23,7 @@ class VectorTests(unittest.TestCase):
         # Test equality
         self.assertNotEqual(self.v1, self.v2)
         expected_result = Vector2D(-1, 1)
-        self.assertEqual(self.v2, expected_result)
+        self.assertNotEqual(self.v2, expected_result)
         # Test less
         result = self.v1 + self.v2
         self.assertLess(result, self.v3)
